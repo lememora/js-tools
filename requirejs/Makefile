@@ -1,11 +1,11 @@
-default: main-built.min.js
+all: bundle.min.js
 	simple_http_server
-main-built.min.js: main-built.js
+bundle.min.js: bundle.js
 	uglify -s $^ -o $@
-main-built.js:
+bundle.js:
 	r.js -o build.js
 clean:
-	rm -f main-built.js
+	rm -f bundle.js
 install:
 	sudo npm install -g requirejs
 	sudo npm install -g uglify

@@ -5,5 +5,5 @@
   },
   include: "main",
   name: "node_modules/almond/almond",
-  out: "main-built.js"
+  out: "bundle.js"
 })
