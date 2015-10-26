@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "babelify": "^6.4.0",
+    "jquery": "^2.1.4"
+  }
+}
