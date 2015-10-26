@@ -3,6 +3,6 @@ default: gulp
 gulp:
 	gulp
 clean:
-	rm -f main-bundle.min.js
+	rm -f bundle.min.js
 install:
 	sudo npm install -g gulp

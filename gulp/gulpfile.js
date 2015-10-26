@@ -15,10 +15,10 @@ gulp.task("default", function() {
           jquery: "node_modules/jquery/dist/jquery"
         }
       }))
-      .pipe(concat("main-bundle.js"))
+      .pipe(concat("bundle.js"))
   )
-  .pipe(order(["**/almond.js", "main-bundle.js"]))
-  .pipe(concat("main-bundle.min.js"))
+  .pipe(order(["**/almond.js", "bundle.js"]))
+  .pipe(concat("bundle.min.js"))
   .pipe(uglify())
   .pipe(gulp.dest("."));
 });
